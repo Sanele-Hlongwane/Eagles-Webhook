@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <div className="bg-gray-900 text-white py-24">
       <div className="container mx-auto text-center">
-        <h1 className={`${fontSize} lg:text-6xl font-bold mb-4 text-navy-900`}>
+        <h1 className={`${fontSize} lg:text-6xl font-bold mb-4 text-white`}>
           Welcome to <span className="text-gold-500">Eagles Ring</span>
         </h1>
         <p className="text-lg lg:text-xl mb-8">

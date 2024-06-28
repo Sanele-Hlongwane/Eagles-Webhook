@@ -41,14 +41,14 @@ const NavBar = () => {
           </button>
         </div>
         <ul
-          className={`lg:flex lg:items-center lg:space-x-6 absolute lg:relative top-16 left-0 w-full lg:w-auto lg:top-0 lg:flex-row flex-col bg-black bg-opacity-75 lg:bg-transparent transition-all duration-300 ease-in-out ${
+          className={`lg:flex lg:items-center lg:space-x-6 absolute lg:relative top-16 left-0 w-full lg:w-auto lg:top-0 lg:flex-row flex-col bg-black text-white p-4 z-50 backdrop-filter backdrop-blur-lg transition-all duration-300 ease-in-out ${
             isOpen ? "block" : "hidden"
           }`}
         >
           {menuItems.map((item, index) => (
             <li key={index} className="relative p-4 lg:p-0">
               <Link href={item.path}>
-                <p className="block lg:inline-block text-lg lg:text-base relative group">
+                <p className="block lg:inline-block text-lg lg:text-base relative group" onClick={() => setIsOpen(false)}>
                   {item.title}
                   <span className="absolute left-0 right-0 h-1 bg-white bottom-0 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
                 </p>
