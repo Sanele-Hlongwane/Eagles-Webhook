@@ -1,5 +1,6 @@
-"use client"
 // src/components/NavBar.tsx
+'use client';
+
 import { useState } from "react";
 import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
@@ -20,13 +21,13 @@ const NavBar = () => {
 
   const menuItems: MenuItem[] = [
     { title: "Home", path: "/" },
-    { title: "About", path: "/about" },
-    { title: "Services", path: "/services" },
-    { title: "Contact", path: "/contact" },
+    { title: "About", path: "/About" },
+    { title: "Services", path: "/Services" },
+    { title: "Contact", path: "/Contact" },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 z-50">
+    <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 z-50 backdrop-filter backdrop-blur-lg">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-xl font-bold">
           <Link href="/">

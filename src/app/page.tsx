@@ -1,9 +1,18 @@
-import Image from "next/image";
+// pages/index.js
+import Layout from './layout';
+import Hero from './Hero/page';
+import Features from './Features/page';
+import Testimonials from './Testimonials/page';
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     
-    </main>
+    <>
+
+      <Hero />
+      <Features />
+      <Testimonials />
+      </>
   );
-}
+};
+
+export default Home;
