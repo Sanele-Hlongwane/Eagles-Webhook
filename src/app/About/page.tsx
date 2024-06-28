@@ -1,4 +1,4 @@
-// src/pages/about.tsx
+"use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
 
@@ -51,7 +51,7 @@ const AboutUs = () => {
               <h3 className="text-xl sm:text-2xl font-medium">John Doe</h3>
               <p className="text-sm sm:text-base text-gray-400">Founder & CEO</p>
             </div>
-            
+
             <div className="text-center">
               <div
                 className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden"
