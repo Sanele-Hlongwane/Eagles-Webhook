@@ -1,11 +1,10 @@
 // src/components/NavBar.tsx
-'use client';
-
+'use client'
 import { useState } from "react";
 import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
-import { SignInButton, UserButton, SignedIn, SignedOut } from "@clerk/nextjs";
+import { SignInButton, SignUpButton, UserButton, SignedIn, SignedOut, SignOutButton } from "@clerk/nextjs";
 
 interface MenuItem {
   title: string;
@@ -58,7 +57,14 @@ const NavBar = () => {
           ))}
           <SignedOut>
             <li className="relative p-4 lg:p-0">
-              <SignInButton />
+              <div className="text-lg lg:text-base text-white group hover:text-blue-500 cursor-pointer">
+                <SignInButton />
+              </div>
+            </li>
+            <li className="relative p-4 lg:p-0">
+              <div className="text-lg lg:text-base text-white group hover:text-blue-500 cursor-pointer">
+                <SignUpButton />
+              </div>
             </li>
           </SignedOut>
           <SignedIn>
@@ -79,7 +85,22 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="relative p-4 lg:p-0">
-              <UserButton />
+              <Link href="/Profile">
+                <p className="block lg:inline-block text-lg lg:text-base relative group">
+                  Profile
+                  <span className="absolute left-0 right-0 h-1 bg-white bottom-0 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
+                </p>
+              </Link>
+            </li>
+            <li className="relative p-4 lg:p-0">
+              <div className="text-lg lg:text-base text-white group hover:text-blue-500 cursor-pointer">
+                <SignOutButton />
+              </div>
+            </li>
+            <li className="relative p-4 lg:p-0">
+              <div className="text-lg lg:text-base text-white group hover:text-blue-500 cursor-pointer">
+                <UserButton />
+              </div>
             </li>
           </SignedIn>
         </ul>
