@@ -8,20 +8,20 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-lg mb-4 leading-relaxed">
-              "Eagles Ring provided the platform I needed to connect with investors who believed in my vision."
+              &quot;Eagles Ring provided the platform I needed to connect with investors who believed in my vision.&quot;
             </p>
             <p className="font-semibold mb-2">- John Doe, CEO of StartupX</p>
             <p className="text-gray-600">
-              "Their guidance and support were instrumental in securing our latest funding round."
+              &quot;Their guidance and support were instrumental in securing our latest funding round.&quot;
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-lg mb-4 leading-relaxed">
-              "As an investor with Eagles Ring, I've seen firsthand the potential for growth in innovative startups."
+              &quot;As an investor with Eagles Ring, I&apos;ve seen firsthand the potential for growth in innovative startups.&quot;
             </p>
             <p className="font-semibold mb-2">- Investor Name, Venture Capitalist</p>
             <p className="text-gray-600">
-              "Their curated selection process ensures high-quality investment opportunities."
+              &quot;Their curated selection process ensures high-quality investment opportunities.&quot;
             </p>
           </div>
         </div>
