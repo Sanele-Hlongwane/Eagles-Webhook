@@ -18,7 +18,7 @@ const AboutUs = () => {
       <div className="max-w-7xl mx-auto pt-20">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-500">About Eagles Ring</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-300">About Eagles Ring</h1>
           <p className="text-lg sm:text-xl mb-8">
             Connecting aspiring entrepreneurs with investment opportunities.
           </p>
