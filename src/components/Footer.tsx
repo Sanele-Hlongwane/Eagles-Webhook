@@ -1,6 +1,9 @@
 import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { checkUser } from '@/lib/checkUser';
 
-const Footer = () => {
+const Footer = async () => {
+  const user = await checkUser();
+  console.log(user);
   return (
     <footer className="bg-black text-white py-8">
       <div className="container mx-auto text-center">

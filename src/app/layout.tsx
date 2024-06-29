@@ -1,8 +1,9 @@
 // src/app/layout.tsx
 import { ClerkProvider } from '@clerk/nextjs';
 import './globals.css';
-import NavBar from '../components/Navbar';
-import Footer from '../components/Footer';
+import NavBar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+
 
 export default function RootLayout({
   children,
