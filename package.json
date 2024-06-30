@@ -15,6 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@neondatabase/serverless": "^0.9.4",
+    "@prisma/adapter-neon": "^5.16.1",
     "@prisma/client": "^5.16.1",
     "framer-motion": "^11.2.12",
     "mongodb": "^6.7.0",
@@ -23,12 +24,14 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
-    "svix": "^1.24.0"
+    "svix": "^1.24.0",
+    "ws": "^8.17.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/ws": "^8.5.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "postcss": "^8",
